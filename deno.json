@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read --allow-write src/main.ts"
+  },
+  "lint": {
+    "include": ["src/**/*.ts"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/**/*.ts"]
+  },
+  "imports": {
+    "std": "https://deno.land/std@0.216.0/mod.ts",
+    "std/": "https://deno.land/std@0.216.0/",
+    "hono": "https://deno.land/x/hono@v4.0.3/mod.ts",
+    "hono/": "https://deno.land/x/hono@v4.0.3/"
+  }
+}
